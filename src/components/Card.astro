@@ -7,14 +7,14 @@ export interface Props {
 const {href, title, body} = Astro.props;
 ---
 <li class="link-card">
-    <a href={href}>
+    <div>
         <h2>
             {title}
         </h2>
         <p>
             {body}
         </p>
-    </a>
+    </div>
 </li>
 <style>
 
@@ -33,7 +33,7 @@ const {href, title, body} = Astro.props;
 		transition: background-position 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
-	.link-card > a {
+	.link-card > div {
 		width: 100%;
 		text-decoration: none;
 		line-height: 1.4;
