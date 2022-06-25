@@ -20,7 +20,7 @@ const {href, title, body} = Astro.props;
 <style>
 
 	:root {
-		--link-gradient: linear-gradient(45deg, #4F39FA, #DA62C4 30%, var(--color-border) 60%);
+		--link-gradient: linear-gradient(45deg, hsl(260, 95%, 36%), hsl(285, 82%, 50%) 30%, var(--color-border) 60%);
 	}
 
 	.link-card {
@@ -31,7 +31,7 @@ const {href, title, body} = Astro.props;
 		background-size: 400%;
 		border-radius: 0.5rem;
 		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: background-position 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
 	.link-card > a {
@@ -42,12 +42,12 @@ const {href, title, body} = Astro.props;
 		border-radius: 0.35rem;
 		color: var(--text-color);
 		background-color: white;
-		opacity: 0.8;
+		opacity: 0.85;
 	}
 
 	h2 {
 		margin: 0;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 	}
     
     p {
@@ -57,7 +57,7 @@ const {href, title, body} = Astro.props;
 
 	h2 span {
 		display: inline-block;
-		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
 	.link-card:is(:hover, :focus-within) {
@@ -65,7 +65,7 @@ const {href, title, body} = Astro.props;
 	}
 
 	.link-card:is(:hover, :focus-within) h2 {
-		color: #4F39FA;
+		color: hsl(270, 90%, 45%);
 	}
 
 	.link-card:is(:hover, :focus-within) h2 span {

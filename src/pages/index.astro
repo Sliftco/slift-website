@@ -2,10 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
-<Layout title="Welcome to Slift.">
+<Layout title="Slift | Ecommerce & Wordpress Development Agency">
+	<img class = "logo" src="src/Images/Slift Logo.webp" alt="">
 	<main>
-	<img src="src/Images/Slift Logo.webp" alt="">
-		<h1>Welcome to <span class="text-gradient">Slift</span></h1>
+		<h1><span class="text-gradient">Slift</span> is a Web Development Agency</h1>
 		<ul role="list" class="link-card-grid">
 			<Card title="E-Commerce" body="We specialise in Custom Shopify and WooCommerce stores." /> 
 			<Card title="Custom Wordpress" body="We create high performance custom Wordpress Sites for Businesses." /> 
@@ -17,7 +17,7 @@ import Card from '../components/Card.astro';
 
 <style>
 	:root {
-		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
+		--astro-gradient: linear-gradient(0deg,hsl(260, 95%, 36%), hsl(280, 82%, 60%));
 	}
 
 	h1 {
@@ -46,6 +46,12 @@ import Card from '../components/Card.astro';
 	@keyframes pulse {
 		0%, 100% { background-position-y: 0%; }
 		50% { background-position-y: 80%; }
+	}
+
+	.logo {
+		width: 150px;
+		display: block;
+		margin: 30px auto 0 auto;
 	}
 
 	.instructions code {
