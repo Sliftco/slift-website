@@ -3,13 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 <Layout title="Slift | Ecommerce & Wordpress Development Agency">
-	<img width="150" height="47" class="logo" src="slift-logo@1x.webp" srcset="slift-logo@1x.webp 150w, slift-logo@2x.webp 300w, slift-logo@3x.webp 450w" alt="Slift Logo">
+	<img width="144" height="40" class="logo" src="slift-logo@1x.webp" srcset="slift-logo@1x.webp 144w, slift-logo@2x.webp 288w, slift-logo@3x.webp 431w" alt="Slift Logo">
 	<main>
-		<h1><span class="text-gradient">Slift</span> is an Ecommerce Agency</h1>
+		<h1><span class="text-gradient">Slift</span> is an Ecommerce & Wordpress Development Agency</h1>
 		<ul role="list" class="link-card-grid">
-			<Card title="Shopify" body="We specialise in Shopify Store Setup, Theme Customisations & custom Theme Development." /> 
-			<Card title="WooCommerce" body="Get your eCommerce business integrated with your WordPress based Website." /> 
-			<Card title="Magento" body="Adobe Commerce is the perfect ecommerce solution if you want want very customised solution or want limitless control." /> 
+			<Card title="Ecommerce" body="We specialise in Shopify Store Setup, Theme Customisations & Speed Optimisation" /> 
+			<Card title="Wordpress" body="We build blazing fast Custom Wordpress Website for Businesses" /> 
+			<Card title="Jamstack" body="get your ecommerce store, wordpress website or a static site converted to a headless ecosystem for speed, flexibility and scalabiolity" /> 
 			<Card title="Strategy" body="We guide you with everything you need to run your business, from sales to CRM, from offline stores to multiple online store-fronts" />
 			<Card title="Design" body="We help with branding and design to get your brand can stand out from the competition" />
 			<Card title="Development" body="We develop cutting edge eCommerce websites that convert and keep you busy counting" />
@@ -19,19 +19,21 @@ import Card from '../components/Card.astro';
 
 <style>
 	:root {
-		--astro-gradient: linear-gradient(0deg,hsl(260, 95%, 36%), hsl(280, 82%, 60%));
+		--astro-gradient: linear-gradient(0deg,hsl(262, 95%, 36%), hsl(280, 82%, 60%));
 	}
 
 	h1 {
-		margin: 2rem 0;
+		margin: 2rem 0 2.5rem 0;
 		text-align: center;
 	}
 
 	main {
 		margin: auto;
-    padding: 1em;
+    	padding: 1em;
 		padding-top: 4em;
 		max-width: 105ch;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.text-gradient {
